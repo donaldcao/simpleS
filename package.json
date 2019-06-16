@@ -16,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/donaldcao/hello-world/issues"
   },
-  "homepage": "https://github.com/donaldcao/hello-world#readme"
+  "homepage": "https://github.com/donaldcao/hello-world#readme",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.20",
+    "@types/react-dom": "^16.8.4",
+    "typescript": "^3.5.2"
+  }
 }
