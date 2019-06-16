@@ -8,6 +8,12 @@ export interface IMainProps {
 }
 
 export class Main extends React.Component<IMainProps, {}> {
+
+    constructor(props: IMainProps) {
+        super(props);
+        
+    }
+
     public render(): JSX.Element {
         return (
             <>
