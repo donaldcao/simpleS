@@ -5,6 +5,7 @@ http://marklodato.github.io/visual-git-guide/index-zh-cn.html
 https://book.git-scm.com/docs
 https://help.github.com/en/articles/creating-a-repository-on-github
 
+git pull --allow-unrelated-histories
 
 // 删除远程分支
 git push origin --delete featureBranchV1
