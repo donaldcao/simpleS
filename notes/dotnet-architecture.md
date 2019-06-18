@@ -4,6 +4,10 @@
 - https://github.com/dotnet-architecture/eShopOnContainers  --> code repo
 - https://devblogs.microsoft.com/cesardelatorre/free-ebookguide-on-net-microservices-architecture-for-containerized-net-applications/  --> free ebook
 - https://github.com/dotnet-architecture/News  --> reference applications and news on .net architecture.
+- Enterprise Integration Patterns: Designing, Building, and Deploying Messaging Solutions
+
+http://cap.dotnetcore.xyz/
+CAP is adopted the local message table program integrated with the current database to solve the exception may occur in the process of the distributed system calling each other. It can ensure that the event messages are not lost in any case.
 
 
 CAP theorem
