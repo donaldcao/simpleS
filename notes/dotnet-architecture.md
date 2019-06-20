@@ -24,4 +24,5 @@ https://dotnet.microsoft.com/learn/dotnet/architecture-guides
 https://microservices.io/patterns/apigateway.html
 https://microservices.io/index.html
 
-
+develop on mac env.
+https://github.com/dotnet-architecture/eShopOnContainers
