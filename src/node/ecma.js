@@ -26,3 +26,6 @@ array.push(123);
 console.log(array[0]);
 console.log(array);
 console.log();
+
+array.unshift(-3, -4);
+console.log(array);
