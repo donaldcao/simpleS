@@ -1,9 +1,8 @@
 
-function getSubString(input) {
-    if(input == null) return '';
+var myName = 'donald';
 
-    var counter = new Array(26);
-    for(var index = 0; index < input.length; index++) {
-        for(int innerIndex = )
-    }
+for(var item in myName) {
+    console.log(item);
 }
+
+console.log('...');
