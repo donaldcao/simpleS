@@ -29,6 +29,30 @@ function Graph() {
         }
 
         return s;
-    };
+    },
+
+    this.bfs = function(v,  callback) {
+        var color = initializeColor();
+        queue =new Queue();
+        queue.enqueue(v);
+
+        while(!queue.isEmpty()) {
+            var u = queue.dequeue();
+            neighbors = adjList.get(u);
+            color[u] = 'grey';
+            for(var i = 0; i < neighbors.lenght; i++) {
+                var w = neighbors[i];
+                if(color[w] == 'white') {
+                    color[w] = 'grey';
+                    queue.enqueue(w);
+                }
+            }
+
+            color[u] = 'black';
+            if(callback) {
+                callback(u);
+            }
+        }
+    }
 }
 
