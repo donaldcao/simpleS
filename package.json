@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/donaldcao/hello-world#readme",
   "dependencies": {
+    "bluebird": "^3.7.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
