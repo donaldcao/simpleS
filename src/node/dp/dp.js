@@ -1,5 +1,6 @@
 // DP详解
 // https://blog.csdn.net/chachapaofan/article/details/99659113
+// 递归的暴力解法 -> 带备忘录的递归解法 -> 非递归的动态规划解法
 
 
 // 1. 暴力算法
@@ -14,10 +15,12 @@ console.log(fib(20));
 function fib2(n) {
     if( n < 0 ) return 0;
 
-    let memo = new Array(n+1);
+    let memo = new Array(n+1).fill(0);
+    /*
     for(let index = 0; index < memo.length; index++) {
         memo[index] = 0;
     }
+    */
 
     return helper(memo, n);
 }
@@ -102,7 +105,7 @@ function coinChange3(coins, amount) {
     for(let i = 1; i <= amount; i++ ) {
         for(let index = 0; index < coins.length; index++) {
             if(coins[index] <= i) {
-                dp[i] = Math.min(dp[i], dp[i-coins[index]] + 1);
+                dp[i] = Math.min(dp[i], 1 + dp[i-coins[index]]);
             }
         }
     }
