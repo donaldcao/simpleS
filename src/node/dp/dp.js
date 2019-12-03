@@ -116,6 +116,22 @@ function coinChange3(coins, amount) {
 let count = coinChange3([1,2,5], 11);
 console.log(count);
 
+function add() {
+    var _innerArgs = Array.slice.call(arguments);
+
+    let _innerFn = function() {
+        _innerArgs.push(...arguments);
+        return _innerFn;
+    }
+
+    _innerFn.toString = function() {
+        return _innerArgs.reduce(function(a, b) {
+            return a + b;
+        });
+    }
+
+    return _innerFn;
+}
 
 
 
