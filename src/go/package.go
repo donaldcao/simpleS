@@ -1,3 +1,4 @@
+/*
 package main
 
 import (
@@ -31,6 +32,7 @@ func main() {
 
 	fmt.Printf("Now you have %g problems. \n", math.Sqrt(7))
 }
+*/
 
 /*
  基本数据类型:
@@ -85,6 +87,143 @@ for i := 0; i < 10; i++ {
 	fmt.Printf(string(i));
 }
 初始化和后置语句是可选的
+
+
+
+
+package main
+
+import "fmt"
+
+func main() {
+	sum := 1
+	for ; sum < 1000; {
+		sum += sum
+	}
+
+	fmt.Printf(string(sum));
+}
+
 */
 
-https://tour.go-zh.org/flowcontrol/2
+
+/*
+go中的while, 等同于for去掉分号
+
+for sum < 1000 {
+	sum += sum
+}
+*/
+
+/*
+if语句, 同for一样, if可以在条件表达式前执行一个简单的初始化语句
+if v := math.Pow(x, n); v < lim {
+	return v
+}
+if中声明的任何变量可以在else语句块中使用
+*/
+
+/*
+switch语句, 默认只执行选择的case语句, 除非以fallthrough结束, case无需为常量, 且不必为整数; case语句的求值顺序为从上到下
+switch os := runtime.GOOS; os {
+case "darwin":
+	fmt.Printf("OS X")
+case "linux":
+	fmt.Println("Linux.")
+default:
+	fmt.Printf("%s. \n", os)
+}
+*/
+
+/*
+defer语句,
+defer 语句会将函数推迟到外层函数返回之后执行。
+推迟调用的函数其参数会立即求值，但直到外层函数返回前该函数都不会被调用。
+推迟的函数调用会被压入一个栈中。当外层函数返回时，被推迟的函数会按照后进先出的顺序调用。
+*/
+
+/*
+指针
+var p *T, 指向类型为T的指针
+i := 10
+p = &i -- &生成指向其操作数的指针
+* 表示指针指向的底层变量, 也结束通常所说的"间接引用"或"重定向"
+fmt.Printf(*p)
+*p = 100
+*/
+
+/*
+结构体
+type Vertex struct {
+	X int
+	Y int
+}
+var p *Vertex
+
+
+package main
+
+import "fmt"
+
+type Vertex struct {
+	X int
+	Y int
+}
+
+var i Vertex = Vertex{1, 2}
+
+var p *Vertex = &i
+
+func main() {
+
+	fmt.Printf(string(p.X))
+}
+
+*/
+
+/*
+数组:
+类型[n]T表示拥有n个T类型的值的数组
+
+var a [10]int
+
+
+切片
+
+每个数组的大小都是固定的。而切片则为数组元素提供动态大小的、灵活的视角。在实践中，切片比数组更常用。
+类型 []T 表示一个元素类型为 T 的切片。
+切片通过两个下标来界定，即一个上界和一个下界，二者以冒号分隔：
+a[low : high]
+它会选择一个半开区间，包括第一个元素，但排除最后一个元素。
+以下表达式创建了一个切片，它包含 a 中下标从 1 到 3 的元素：
+a[1:4]
+*/
+
+package main
+
+import "fmt"
+
+func main() {
+	a := [3]int {1,2,3}
+
+	b := a[0: 1];
+
+	fmt.Println(string(a[1]))
+	fmt.Printf(string(b[0]))
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
