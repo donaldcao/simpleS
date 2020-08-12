@@ -9,3 +9,7 @@ else:
 print('''asdfasf
 asfasf
 asfasffasfd''')
+
+def func2(name: "tste", age: str) -> str:
+    print(name + age)
+    return ""

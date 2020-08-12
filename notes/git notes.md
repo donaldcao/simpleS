@@ -11,6 +11,10 @@ git pull --allow-unrelated-histories
 git push origin --delete featureBranchV1
 // 删除本地分支
 git branch -d branchName
+git branch 
+git branch -r
+git branch -a
+
 
 ecmascript notes.
 jQuery
