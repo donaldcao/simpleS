@@ -89,7 +89,7 @@ def myMethod(a, b):
 - g = (x*x for x in range(1, 11))
 
 
-## 迭代器  Iterable
+## 迭代器  Iterable & Iterator
 - isinstance([], Iterable)
 - 可以使用isinstance()判断一个对象是否是Iterable对象
 - 可以被next()函数调用并不断返回下一个值的对象称为迭代器：Iterator
