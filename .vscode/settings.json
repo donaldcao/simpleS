@@ -1,3 +1,7 @@
 {
-    "debug.node.autoAttach": "on"
+    "debug.node.autoAttach": "on",
+    "files.associations": {
+        "xiosbase": "cpp",
+        "string": "cpp"
+    }
 }
