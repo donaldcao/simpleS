@@ -37,10 +37,22 @@ class Solution {
             while(i < l) {
                 while((j < l) && (s[j] == s[i])) j++;
                 int n = j - i;
-                res += (n*(n-1)) / 2;
+                res += (n*(n+1)) / 2;
                 i = j;
             }
             
+            return res;
+        }
+
+        int countLetter4(string s) {
+            int res = 0;
+            int lo = 0, hi = 0, size = s.size();
+            while(lo < size){
+                while ((hi < size) && (s[hi] == s[lo])) ++hi;
+                int n = hi - lo;
+                res += (n * (n+1)) / 2;
+                lo = hi;
+            }
             return res;
         }
 };
