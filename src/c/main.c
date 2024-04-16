@@ -11,4 +11,9 @@ int main() {
         .name = "donald",
         .age = 39,
     };
+
+    return 0;
+    
 }
+
+
