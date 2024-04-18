@@ -6,6 +6,8 @@ struct person
 };
 
 int main() {
+
+    // c99
     struct person p =
     {
         .name = "donald",
